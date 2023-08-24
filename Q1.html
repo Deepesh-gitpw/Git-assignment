@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+            *{
+             box-sizing: border-box;
+             margin: 0;
+             padding: 0;
+            }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f1f1f1;
+        }
+        .container{
+            width: 400px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgba(1, 1, 1, 0.1);
+        }
+            
+            
+        h3{
+            text-align: center;
+            margin-bottom: 30px;
+            color: #4f4f4f;
+            font-size: 20px;
+        }
+        .login{
+           padding: 30px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        .users{
+            position: relative;
+            margin-bottom: 10px;
+        }
+        .users input {
+                width: 100%;
+                padding: 10px 0;
+                font-size: 16px;
+                color: #414141;
+                border: none;
+                border-bottom: 1px solid #333;
+                outline: none;
+                background: transparent;
+                transition: border 0.2s;
+            }
+            label{
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: 17px;
+                color: #716c6c;
+                pointer-events: none;
+                transition: all 0.2s;
+            }
+        
+        button{
+            display: block;
+            background-color: #1e87f0;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+            width: 340px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+        <div class="container">
+        <div class="login">
+            <h3>
+                Login
+            </h3>
+            <form action="backend.php">
+            <div class="users">
+                <label for="username">Username</label> 
+                <input type="text" id="username" name="username" required="">
+            </div>
+            <div class="users">
+                <label for="password">Password</label> 
+                <input type="text" id="password" name="password" required="">
+            </div>
+            <div class="submit">
+                <button>
+                    Submit
+                </button>
+            </div>
+            </form>
+            </div>
+        </div>
+</body>
+</html>
